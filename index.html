@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Tasks</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- confirmation box starts here -->
+    <div class="confirmationBox1 confirmationBox2" id="confirmationBox">
+        <div class="confirm">
+            <h4 class="confirmationBoxTitle" id="confirmationBoxTitle"></h4>
+            <button id="ok">Delete</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </div>
+    <!-- confirmation box ends here -->
+
+    <!-- alert Animation Starts Here -->
+
+    <div class="mainAlert" id="mainAlert">
+        <div class="subAlert">
+            <h1 class="alertTitle removingForTemp" id="alertTitle"></h1>
+            <h3 class="alertSub removingForTemp" id="alertSub"></h3>
+        </div>
+    </div>
+
+    <!-- alert Animation Ends Here -->
+    
+    <div class="mainContainer">
+        <!-- Title Section Starts Here -->
+        <div class="ProjectTitle" id="ProjectTitle">
+            <h1>Task Manager</h1>
+        </div>
+        <!-- Tiitle Section Ends Here -->
+
+        <!-- content starts here -->
+        <div id="content" class="content">
+            <div class="overall">
+                <div class="mainContent">
+                    <div class="inputs">
+                        <input type="text" name="inputRemainder" id="inputRemainder" class="inputRemainder" size="25" placeholder="Enter Task" autocomplete="off">
+                        <input type="datetime-local" name="inputDate" id="inputDate" class="inputDate">
+                        
+                    </div>
+                    <div class="addBtnDiv">
+                        <button id="Add" onclick="add()">ADD</button>
+                        <button id="confirmEdit" class="confirmEdit1 removingForTemp">Confirm</button>
+                        <button id="cancelEdit" class="cancelEdit1 removingForTemp">Cancel</button>
+                    </div>
+                    <div class="rightSide">
+                        <div class="upperRight">
+                            <button id="deleteAll" onclick="deleteAll()">Delete All</button>
+                            <button id="DeleteDone" onclick="deleteDone()">Delete Expired</button>
+                        </div>
+                        <select name="myDropDown" id="myDropDown">
+                            <option value="completionDate" id="completionDate">Completion Date</option>
+                            <option value="enteredDate" id="enteredDate">Entered Date</option>
+                        </select>
+                        <button id="sortByBtn" onclick="sortByDate()">Sort</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="displaying">
+            <div class="subDisplay">
+                <img src="./images/image2.jpg" alt="Default Image" id="displayingImg">
+            </div>
+        </div>
+
+        <!-- content ends here -->
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

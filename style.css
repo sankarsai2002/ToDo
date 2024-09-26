@@ -1,0 +1,430 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-padding-top: 21%;
+}
+
+body{
+    justify-content: center;
+}
+
+.removingForTemp{
+    display: none;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.mainContainer  .ProjectTitle h1{
+    font-size: 2vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 16vw;
+    box-shadow: 5px 8px 10px rgb(94, 94, 94);
+    border-radius: 5px;
+    text-decoration: underline;
+}
+/* Title Section Starts Here */
+
+
+/* Title Section Ends Here */
+/* confirmation box */
+
+.confirmationBox2{
+    display: none;
+}
+
+.confirmationBox1{
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.confirmationBox1 .confirmationBoxTitle{
+    font-size: 25px;
+    padding: 0px 0px 10px 0px;
+}
+
+.confirmationBox1 #ok{
+    background: linear-gradient(0deg, rgb(255, 0, 0), rgb(255, 100, 100));
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.confirmationBox1 #cancel{
+    background: linear-gradient(0deg, rgb(0, 150, 60), rgb(100, 250, 150));
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    margin: 0px 10px 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.confirmationBox1 #cancel:hover{
+    transform: scale(1.05);
+}
+.confirmationBox1 #ok:hover{
+    transform: scale(1.05);
+}
+
+.toDeactivateBackground{
+    filter: brightness(0.5);
+    pointer-events: none;
+}
+
+/* confirmation Box ends here */
+
+/* alert Animation Starts Here */
+
+.mainAlert{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 6vw;
+}
+
+.addAnimationName{
+    animation-name: option;
+    animation-duration: 3s;
+}
+
+@keyframes option{
+    0%{
+        opacity: 0.0;
+        left:-50vw;
+    }
+    30%{
+        opacity: 1;
+        left: 10vw;
+    }
+    100%{
+        opacity: 1;
+        left: 10vw;
+    }
+}
+
+.mainAlertRed{
+    border: 2px solid red;
+    background-color: rgb(244, 196, 196);
+}
+
+.mainAlertRed .alertTitle {
+    color: red;
+    font-size: 3vh;
+}
+
+.mainAlertRed .alertSub{
+    color: rgb(206, 64, 64);
+}
+
+
+.mainAlertGreen{
+    border: 2px solid green;
+    background-color: rgb(196, 244, 196);
+}
+
+.mainAlertGreen .alertTitle{
+    color: green;
+    font-size: 3vh;
+}
+
+.mainAlertGreen .alertSub{
+    color: rgb(64, 206, 64);
+}
+
+/* alert Animation Ends Here */
+
+/* Default Image Starts Here */
+
+.displaying .subDisplay{
+    width: 50vw;
+}
+
+.displaying .subDisplay img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.displaying .subDisplay .displaying1{
+    display: none;
+}
+
+/* Default Image Ends Here */
+
+/* Content Starts Here */
+
+.content .overall{
+    position: sticky;
+    top: 0;
+}
+
+.content .mainContent {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 8px 10px rgb(94, 94, 94);
+    margin: 10px 0px 20px 0px;
+}
+
+.content .mainContent .inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 10px;
+}
+
+.content .mainContent .inputs .inputRemainder{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 10px 0px 20px 10px;
+    outline: none; /* to remove default focus outline */
+    border: none;
+    border-bottom: 2px solid rgb(110, 110, 110);
+}
+
+.content .mainContent .inputs .inputDate{
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    font-weight: 600;
+    color: rgb(110, 110, 110);
+    outline: none;
+}
+
+.content .mainContent .inputs .inputDate:focus{
+    border: none;
+}
+
+.content .mainContent .addBtnDiv #Add{
+    background: linear-gradient(0deg, rgb(0, 150, 60), rgb(100, 250, 150));
+    box-shadow: 0 .5em .5em -.4em rgb(0, 0, 0, .5);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin: 25px 25px 0px 0px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.content .mainContent .addBtnDiv #Add:hover{
+    filter: brightness(1.2);
+    transform: scale(1.05); 
+    color: rgb(98, 98, 98);
+}
+
+.content .addBtnDiv .confirmEdit1{
+    background: linear-gradient(0deg, rgb(0, 150, 60), rgb(100, 250, 150));
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    margin: 20px 10px 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.content .addBtnDiv .confirmEdit1:hover{
+    transform: scale(1.05);
+}
+
+.content .addBtnDiv .cancelEdit1{
+    background: linear-gradient(0deg, rgb(0, 150, 60), rgb(100, 250, 150));
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    margin: 0px 10px 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.content .addBtnDiv .cancelEdit1:hover{
+    transform: scale(1.05);
+}
+
+.removingForTemp{
+    display: none;
+}
+
+.content .rightSide{
+    border-left: 2px solid rgb(155, 155, 155);
+    padding: 10px;
+}
+
+.content .rightSide .upperRight{
+    display: flex;
+}
+
+.content .rightSide #deleteAll,#DeleteDone{
+    background: linear-gradient(0deg, rgb(255, 0, 0), rgb(255, 100, 100));
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 10px 10px 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    padding:5px 10px;
+    white-space: nowrap;
+}
+
+.content .rightSide #deleteAll:hover,#DeleteDone:hover{
+    transform: scale(1.05);
+}
+
+.content .rightSide #myDropDown{
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgb(55, 55, 55);
+    color: #fff;
+    border: 2px solid rgb(167, 167, 167);
+}
+
+.content .rightSide #sortByBtn{
+    background: linear-gradient(0deg, rgb(0, 150, 60), rgb(100, 250, 150));
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.content .rightSide #sortByBtn:hover{
+    transform: scale(1.05);
+}
+
+.infoBoxing{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 10px;
+    border: 3px solid rgb(155, 155, 155);
+}
+
+.infoBoxing h1{
+    font-size: 19px;
+    padding: 0px 0px 10px 5px;
+}
+
+.infoBoxing div[id$="SepDiv"]{
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 5px black;
+    padding: 10px;
+}
+
+.infoBoxing div[id$="SepDiv"] h3{
+    font-size: 30px;
+    padding: 0px 0px 10px 0px;
+}
+
+.infoBoxing div[id$="SepDiv"] div[id$="SepDiv1"]{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoBoxing div[id$="SepDiv"] div[id$="SepDiv1"] p{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(123, 123, 123)
+}
+
+.infoBoxing div[id$="SepDiv"] div[id$="SepDiv1"] p[id$="End"]{
+    color: black;
+}
+
+.infoBoxing button[id$="Del"]{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s;
+    margin: 10px 350px 0px 0px;
+}
+
+.infoBoxing button[id$="Del"]:hover{
+    transform: scale(1.05);
+}
+
+.infoBoxing button[id$="Edit"]{
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s;
+    margin: 10px 0px 0px 0px;
+}
+
+.infoBoxing button[id$="Edit"]:hover{
+    transform: scale(1.05);
+}
+
+
+/* Content Ends Here */
+
+/* Third range: 1302px to 1440px */
+/* @media only screen and (min-width: 1302px) and (max-width: 1440px) {
+.content {
+    width: 56vw;
+    margin: 0px 35%;
+    background-color: rgb(212, 255, 0);
+}
+.mainContainer  .ProjectTitle h1{
+    padding: 10px 11.6vw;
+}
+} */
+
+/* @media screen and (min-width:425px) and (max-width:768px) {
+    .content {
+        width: 96vw;
+        background-color: rgb(212, 255, 0);
+    }
+    .mainContainer  .ProjectTitle h1{
+        font-size: 3vw;
+        padding: 10px 20vw;
+    }
+    .rightSide{
+        display: none;
+    }
+} */
